@@ -1,10 +1,9 @@
+# EPoll-ThreadPool
+implementation of threadpool with EPOLL
+
 To compile
 
-g++ queueapi.cpp -o queueapi.o -std=c++11 -c -fPIC -Wall
-
-g++ -shared -o libq.so queueapi.o
-
-gcc thpool.c -lq -lpthread -w
+gcc thmain.c threadpool.c -w -lpthread -g
 
 
-and to run ./a.out
+and to run the sample ./a.out
