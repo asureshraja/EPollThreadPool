@@ -22,7 +22,7 @@ int main(){
         printf("a= %d\n",a ,*a);
         t1->arg=NULL; //chk with variable 'a' also
         t1->function=print_without_num;
-        pthread_t threads[4];int i;
+        int i;
         for (i = 0; i < 4; i++) {
             submit_to_worker_thread(thpool,t1);
         }
